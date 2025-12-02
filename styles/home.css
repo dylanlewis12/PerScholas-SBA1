@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ede7df;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+#hero-section {
+  background: url("../images/beach.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#hero-section h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#hero-section p {
+  margin: 10px 0 0 0;
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#trip-plan {
+  display: grid;
+  grid-template-columns: 180px 180px 220px 100px 100px 150px;
+  gap: 20px;
+  padding: 30px;
+  max-width: fit-content;
+  margin: 30px auto;
+  background-color: #004d7a;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  align-items: end;
+  justify-items: center;
+}
+
+.trip-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.trip-form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #ffffff;  
+}
+
+.trip-form input,
+.trip-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: rgb(255, 255, 255);
+}
+
+#check-in {
+  width: 140px;
+}
+
+#check-out {
+  width: 140px;
+}
+
+#adult-count {
+  width: 40px;
+}
+
+#child-count {
+  width: 40px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffc107;  
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0d2540; 
+}
+
+#airlines-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+#airlines-section h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #1a3a52;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+table th {
+  background-color: #004d7a;
+  color: white;
+  padding: 18px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+table td {
+  padding: 16px 18px;
+  border-bottom: 1px solid #e8e8e8;
+  font-size: 14px;
+  color: black;
+}
+
+table tr:hover {
+  background-color: #f0f8ff;
+  transition: background-color 0.3s ease;
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+table td:nth-child(4) {
+  font-weight: 600;
+  color: #1abc9c;
+  font-size: 16px;
+}
+
+table td:nth-child(5) {
+  color: #f39c12;
+  font-size: 14px;
+}
+
+footer {
+    background-color: #1a3a52;
+}
