@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../styles/home.css">
+
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        ul li:first-child {
+            margin-right: auto;
+            padding-left: 15px;
+        }
+
+        ul li {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        ul li a {
+            display: inline-flex;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 12px 16px;
+            text-decoration: none;
+            align-items: center;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+
+        ul li a:hover {
+            background-color: #2a5a7a;
+        }
+
+        img.avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section id="navbar" style="background-color: #004d7a">
+            <ul>
+                <li style="margin-right: auto;"><a href="index.html"><img src="../images/travel-icon.jpeg" alt="Trivago" class="avatar"></a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </section>
+    </header>
+
+    <section id="hero-section">
+        <h1>Welcome to Truvago!</h1>
+        <p>Discover your next adventure with our travel booking platform</p>
+    </section>
+
+    <section id="trip-plan">
+        <div class="trip-form">
+            <label for="check-in">Check in date:</label>
+            <input type="date" id="check-in" name="trip-start" value="2025-12-02" min="1900-01-01" max="2100-12-31">
+        </div>
+
+        <div class="trip-form">
+            <label for="check-out">Check out date:</label>
+            <input type="date" id="check-out" name="trip-end" value="2025-12-03" min="1900-01-01" max="2100-12-31">
+        </div>
+
+        <div class="trip-form">
+            <label for="hotel-select">Hotel:</label>
+            <select name="hotel" id="hotel-select">
+                <option value="">--Please choose an option--</option>
+                <option value="marriot">Marriott International</option>
+                <option value="hilton">Hilton Worldwide</option>
+                <option value="holiday">Holiday Inn</option>
+                <option value="hyatt">Hyatt Hotel</option>
+                <option value="hampton">Hampton Inn</option>
+            </select>
+        </div>
+
+        <div class="trip-form">
+            <label for="adult-count">Adults:</label>
+            <input type="number" id="adult-count" name="adults" min="0" max="10" value="1">
+        </div>
+
+        <div class="trip-form">
+            <label for="child-count">Children:</label>
+            <input type="number" id="child-count" name="children" min="0" max="10" value="1">
+        </div>
+
+        <button>Book Trip</button>
+    </section>
+
+    <section id="airlines-section">
+  <h2 style="color: #004d7a;">Featured Airline Prices</h2>
+  <table>
+    <tr>
+      <th>Airline</th>
+      <th>Destination</th>
+      <th>Departure Date</th>
+      <th>Price</th>
+      <th>Rating</th>
+    </tr>
+    <tr>
+      <td>Delta Airlines</td>
+      <td>Miami, Florida</td>
+      <td>12/15/2025</td>
+      <td>$299</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>United Airlines</td>
+      <td>Cancun, Mexico</td>
+      <td>12/20/2025</td>
+      <td>$349</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Southwest Airlines</td>
+      <td>Hawaii, USA</td>
+      <td>12/22/2025</td>
+      <td>$279</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>American Airlines</td>
+      <td>Caribbean Islands</td>
+      <td>01/05/2026</td>
+      <td>$399</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Spirit Airlines</td>
+      <td>Puerto Rico</td>
+      <td>12/18/2025</td>
+      <td>$199</td>
+      <td>3</td>
+    </tr>
+  </table>
+</section>
+</body>
+</html>
